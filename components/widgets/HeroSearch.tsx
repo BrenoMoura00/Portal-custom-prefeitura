@@ -1,6 +1,6 @@
 export default function HeroSearch() {
   return (
-    <section className="relative z-0 overflow-hidden py-[100px] md:py-[140px] text-center px-4 bg-[#F8FAFC] before:absolute before:inset-0 before:-z-20 before:bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=2000&q=80')] before:bg-cover before:bg-center before:opacity-[0.1] before:mix-blend-multiply after:absolute after:bottom-0 after:inset-x-0 after:h-[150px] after:bg-gradient-to-t after:from-[#F8FAFC] after:to-transparent after:-z-10">
+    <section className="relative z-0 overflow-hidden py-[100px] md:py-[140px] text-center px-4 bg-[#F4F7F9] before:absolute before:inset-0 before:scale-[1.15] before:-z-20 before:bg-[url('https://commons.wikimedia.org/wiki/Special:FilePath/Pernambuco.svg')] before:bg-cover before:bg-center before:bg-no-repeat before:opacity-[0.09] before:mix-blend-multiply after:absolute after:bottom-0 after:inset-x-0 after:h-[150px] after:bg-gradient-to-t after:from-[#F4F7F9] after:to-transparent after:-z-10">
       <div className="max-w-[850px] mx-auto">
         <span className="font-bold text-[#005FA3] uppercase tracking-[1.5px] text-[0.9rem]">
           Olá! Bem-vindo ao portal de Chã Grande.
