@@ -18,7 +18,6 @@ export default function QuickLinksWidget() {
         <h4 className="text-[1.25rem] font-extrabold text-[#0A2540]">Acesso Rápido</h4>
       </div>
       
-      {/* Container com limite de altura e scroll customizado */}
       <div className="max-h-[340px] overflow-y-auto pr-[8px] -mr-[8px] [&::-webkit-scrollbar]:w-[6px] [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-[#0A2540]/15 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-[#005FA3]/30 transition-colors">
         <div className="grid grid-cols-2 gap-[12px] pb-[4px]">
           {links.map((link) => (

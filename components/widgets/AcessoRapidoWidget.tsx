@@ -21,7 +21,18 @@ export default function AcessoRapidoWidget() {
     { id: 5, title: 'Contracheque', description: 'Portal do Servidor', icon: 'fas fa-money-check-alt', categories: ['servidor'] },
     { id: 6, title: 'Marcação de Consultas', description: 'Saúde municipal', icon: 'fas fa-laptop-medical', categories: ['cidadao'] },
     { id: 7, title: 'Carta de Serviços', description: 'Guia de atendimento', icon: 'fas fa-file-signature', categories: ['cidadao', 'empresa'] },
-    { id: 8, title: 'Licitações', description: 'Editais e contratos', icon: 'fas fa-gavel', categories: ['empresa'] }
+    { id: 8, title: 'Licitações', description: 'Editais e contratos', icon: 'fas fa-gavel', categories: ['empresa'] },
+    { id: 9, title: 'Emissão de IPTU', description: 'Guias e certidões', icon: 'fas fa-home', categories: ['cidadao', 'empresa'] },
+    { id: 10, title: 'Alvará Online', description: 'Licenças para negócios', icon: 'fas fa-store', categories: ['empresa'] },
+    { id: 11, title: 'Concursos', description: 'Editais e resultados', icon: 'fas fa-briefcase', categories: ['cidadao'] },
+    { id: 12, title: 'Iluminação Pública', description: 'Solicitação de reparos', icon: 'fas fa-lightbulb', categories: ['cidadao', 'empresa'] },
+    { id: 13, title: 'Matrícula Escolar', description: 'Rede municipal de ensino', icon: 'fas fa-school', categories: ['cidadao'] },
+    { id: 14, title: 'Legislação Municipal', description: 'Leis e decretos', icon: 'fas fa-balance-scale', categories: ['cidadao', 'empresa', 'servidor'] },
+    { id: 15, title: 'Sala do Empreendedor', description: 'Apoio ao MEI', icon: 'fas fa-handshake', categories: ['empresa'] },
+    { id: 16, title: 'Agendamento de RG', description: 'Emissão de documentos', icon: 'fas fa-id-card', categories: ['cidadao'] },
+    { id: 17, title: 'Ponto Eletrônico', description: 'Controle de jornada', icon: 'fas fa-user-clock', categories: ['servidor'] },
+    { id: 18, title: 'Limpeza Urbana', description: 'Coleta e entulhos', icon: 'fas fa-trash-alt', categories: ['cidadao', 'empresa'] },
+    { id: 19, title: 'Vigilância Sanitária', description: 'Denúncias e licenças', icon: 'fas fa-shield-alt', categories: ['cidadao', 'empresa'] }
   ];
 
   const filteredServices = services.filter(service =>
@@ -47,8 +58,7 @@ export default function AcessoRapidoWidget() {
           </div>
         </div>
 
-        {/* Adicionado h-[275px], overflow-y-auto e content-start para manter o tamanho fixo */}
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-[20px] h-[275px] content-start overflow-y-auto pr-[5px] scrollbar-thin scrollbar-thumb-[#005FA3] scrollbar-track-black/20">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-[20px] h-[380px] content-start overflow-y-auto overflow-x-hidden pt-[10px] pb-[10px] pr-[5px] scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent hover:scrollbar-thumb-white/20">
           {filteredServices.map((service) => (
             <ServiceCard 
               key={service.id}
@@ -61,4 +71,4 @@ export default function AcessoRapidoWidget() {
       </div>
     </section>
   );
-}
+} 

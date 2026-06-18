@@ -10,7 +10,7 @@ export default function SealsWidget() {
   const displaySeals = [...seals, ...seals, ...seals];
 
   return (
-    <section className="mb-[60px] text-center relative overflow-hidden">
+    <section className="mb-[60px] mt-9 text-center relative overflow-hidden">
       <h3 className="text-[1.4rem] font-bold text-[#0A2540] mb-[30px]">
         Reconhecimentos e Selos Municipais
       </h3>

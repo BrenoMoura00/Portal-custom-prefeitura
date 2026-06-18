@@ -6,7 +6,7 @@ export default function ObrasWidget() {
       location: 'Centro',
       progress: 75,
       status: 'Em andamento',
-      image: 'https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=600&q=80'
+      image: 'https://loremflickr.com/600/400/park,city/all'
     },
     {
       id: 2,
@@ -14,7 +14,7 @@ export default function ObrasWidget() {
       location: 'Bairro Esperança',
       progress: 40,
       status: 'Em andamento',
-      image: 'https://images.unsplash.com/photo-1504307651254-35680f356f12?auto=format&fit=crop&w=600&q=80'
+      image: 'https://loremflickr.com/600/400/hospital,building/all'
     },
     {
       id: 3,
@@ -22,7 +22,7 @@ export default function ObrasWidget() {
       location: 'Zona Sul',
       progress: 95,
       status: 'Fase Final',
-      image: 'https://images.unsplash.com/photo-1584464436224-811c7fa15f5c?auto=format&fit=crop&w=600&q=80'
+      image: 'https://loremflickr.com/600/400/road,construction/all'
     }
   ];
 

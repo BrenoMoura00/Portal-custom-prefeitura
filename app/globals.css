@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  background-color: #F4F7F9;
+}
+
 .alto-contraste,
 .alto-contraste body,
 .alto-contraste div:not(.ignore-contraste),

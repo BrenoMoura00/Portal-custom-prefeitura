@@ -3,7 +3,6 @@ import NewsCard from '../ui/NewsCard';
 export default function NewsWidget() {
   return (
     <div className="flex flex-col gap-[24px]">
-      
       <div className="flex justify-between items-center mb-[8px]">
         <div className="flex items-center gap-[12px]">
           <span className="relative flex h-[12px] w-[12px]">
@@ -19,21 +18,20 @@ export default function NewsWidget() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-[24px]">
         <NewsCard
-          image="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=600&q=80"
+          image="https://loremflickr.com/600/400/technology,digital/all"
           tag="Tecnologia"
           date="10 Jun 2026"
           title="Modernização Digital: Prefeitura lança novo portal institucional"
           icon="fas fa-microchip"
         />
         <NewsCard
-          image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
+          image="https://loremflickr.com/600/400/business,chart/all"
           tag="Transparência"
           date="08 Jun 2026"
           title="Novas ferramentas de Transparência são implementadas"
           icon="fas fa-chart-pie"
         />
       </div>
-      
     </div>
   );
-} 
+}

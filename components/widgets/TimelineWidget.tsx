@@ -1,37 +1,92 @@
 export default function TimelineWidget() {
-  const items = [
-    { date: "10 Jun", title: "Edital de Convocação 004/2026 - Educação" },
-    { date: "09 Jun", title: "Decreto Municipal Nº 89/2026" },
-    { date: "08 Jun", title: "Aviso de Licitação - Pregão Eletrônico 12/2026" },
-    { date: "07 Jun", title: "Portaria Nº 150/2026 - Nomeação de Servidores" },
+  const atos = [
+    { 
+      id: 1, 
+      date: '10 JUN', 
+      type: 'Educação', 
+      title: 'Edital de Convocação 004/2026', 
+      desc: 'Convoca professores aprovados no concurso público para apresentação de documentos.' 
+    },
+    { 
+      id: 2, 
+      date: '09 JUN', 
+      type: 'Gabinete do Prefeito', 
+      title: 'Decreto Municipal Nº 89/2026', 
+      desc: 'Declara ponto facultativo nas repartições públicas municipais durante o feriado.' 
+    },
+    { 
+      id: 3, 
+      date: '08 JUN', 
+      type: 'Licitações', 
+      title: 'Aviso de Licitação - Pregão Eletrônico 12/2026', 
+      desc: 'Aquisição de equipamentos de informática para modernização das escolas municipais.' 
+    },
+    { 
+      id: 4, 
+      date: '07 JUN', 
+      type: 'Administração', 
+      title: 'Portaria Nº 150/2026', 
+      desc: 'Nomeação de servidores efetivos para os cargos de assistente administrativo.' 
+    },
+    { 
+      id: 5, 
+      date: '06 JUN', 
+      type: 'Fazenda', 
+      title: 'Lei Complementar Nº 45/2026', 
+      desc: 'Altera o código tributário do município e institui novos prazos para regularização fiscal.' 
+    },
+    { 
+      id: 6, 
+      date: '05 JUN', 
+      type: 'Educação', 
+      title: 'Resultado Preliminar PSS 01/2026', 
+      desc: 'Divulgação da lista de classificados no Processo Seletivo Simplificado.' 
+    },
+    { 
+      id: 7, 
+      date: '04 JUN', 
+      type: 'Gabinete do Prefeito', 
+      title: 'Nomeação de Diretores Escolares', 
+      desc: 'Designa os novos gestores eleitos para o biênio nas unidades de ensino básico.' 
+    },
   ];
 
   return (
-    <div className="flex-1 flex flex-col bg-white rounded-[24px] p-[28px] border border-[#E2E8F0] shadow-[0_8px_24px_rgba(10,37,64,0.04)]">
-      <div className="flex items-center gap-[12px] mb-[24px] shrink-0">
-        <i className="fas fa-file-signature text-[1.4rem] bg-gradient-to-br from-[#005FA3] to-[#0A2540] bg-clip-text text-transparent"></i>
-        <h4 className="text-[1.25rem] font-extrabold text-[#0A2540]">Diário Oficial & Atos</h4>
+    <div className="bg-white rounded-[24px] p-[24px] border border-[#E2E8F0] shadow-[0_8px_24px_rgba(10,37,64,0.04)] h-full flex flex-col w-full">
+      <div className="flex justify-between items-center mb-[20px]">
+        <div className="flex items-center gap-[12px]">
+          <i className="fas fa-file-signature text-[1.4rem] text-[#005FA3]"></i>
+          <h4 className="text-[1.25rem] font-extrabold text-[#0A2540]">Diário Oficial & Atos</h4>
+        </div>
+        <a href="#" className="text-[#005FA3] text-[0.8rem] font-bold hover:underline">Ver tudo</a>
       </div>
 
-      <div className="flex flex-col gap-[20px] flex-1 h-0 pr-[5px] overflow-y-auto scrollbar-thin scrollbar-thumb-[#005FA3] scrollbar-track-black/10">
-        {items.map((item, index) => (
-          <div key={index} className="flex gap-[16px] relative group">
-            {index !== items.length - 1 && (
-              <div className="absolute left-[6px] top-[28px] bottom-[-20px] w-[2px] bg-[#E2E8F0] z-[1]"></div>
-            )}
-            
-            <div className="w-[14px] h-[14px] rounded-full bg-white border-[3px] border-[#005FA3] mt-[5px] z-[2] relative shadow-[0_0_0_4px_rgba(0,95,163,0.1)] transition-all duration-300 group-hover:bg-[#005FA3] group-hover:shadow-[0_0_0_6px_rgba(0,95,163,0.2)]"></div>
-            
-            <div className="flex-1 flex flex-col items-start gap-[6px] pb-[8px]">
-              <span className="bg-[#005FA3]/10 text-[#005FA3] py-[4px] px-[12px] rounded-full text-[0.7rem] font-extrabold uppercase tracking-[0.5px]">
-                {item.date}
-              </span>
-              <a href="#" className="text-[#2C3E50] no-underline text-[0.95rem] font-semibold leading-[1.4] transition-colors duration-300 hover:text-[#005FA3]">
-                {item.title}
-              </a>
+      <div className="flex-1 max-h-[400px] w-full overflow-y-auto pr-[8px] [&::-webkit-scrollbar]:w-[4px] [&::-webkit-scrollbar-track]:bg-[#F1F5F9] [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-thumb]:bg-[#CBD5E1] [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-[#94A3B8]">
+        <div className="relative border-l-[2px] border-[#E2E8F0] ml-[8px]">
+          {atos.map((ato) => (
+            <div key={ato.id} className="relative pl-[24px] pb-[20px] last:pb-0 group cursor-pointer">
+              
+              <div className="absolute left-[-7px] top-[4px] w-[12px] h-[12px] rounded-full border-[2px] bg-white border-[#005FA3] transition-all duration-300 group-hover:scale-[1.4] group-hover:bg-[#005FA3] group-hover:border-[#005FA3]"></div>
+              
+              <div className="flex items-center gap-[8px] mb-[6px]">
+                <span className="inline-block bg-[#F0F6FF] text-[#005FA3] text-[0.7rem] font-extrabold px-[10px] py-[4px] rounded-full">
+                  {ato.date}
+                </span>
+                <span className="text-[#64748B] text-[0.75rem] font-semibold truncate">
+                  {ato.type}
+                </span>
+              </div>
+              
+              <p className="text-[#0A2540] font-bold text-[0.95rem] leading-[1.3] group-hover:text-[#005FA3] transition-colors pr-[10px]">
+                {ato.title}
+              </p>
+              
+              <p className="text-[#64748B] text-[0.8rem] leading-[1.4] mt-[4px] pr-[10px] line-clamp-2">
+                {ato.desc}
+              </p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
