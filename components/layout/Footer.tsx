@@ -29,7 +29,7 @@ export default function Footer() {
         
         <div className="flex flex-col items-center sm:items-start">
           <img 
-            src="/assets/logo 2.png" 
+            src="/assets/Logo%202.png" 
             alt="Prefeitura" 
             className="max-w-[220px] mb-[15px]"
           />

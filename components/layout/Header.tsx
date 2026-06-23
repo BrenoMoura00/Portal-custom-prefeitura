@@ -12,7 +12,7 @@ export default function Header() {
         <div className="w-[70%] md:w-auto flex-shrink-0">
           <a href="#" aria-label="Página Inicial - Prefeitura de Chã Grande" className="flex items-center no-underline">
             <img 
-              src="/assets/logo 1.png" 
+              src="/assets/Logo%201.png" 
               alt="Logótipo da Prefeitura Municipal de Chã Grande" 
               className="max-h-[55px] w-auto object-contain transition-transform duration-300 hover:scale-[1.02]"
             />
