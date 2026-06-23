@@ -10,7 +10,7 @@ export default function Header() {
       <div className="max-w-[1400px] mx-auto flex justify-between items-center gap-[20px]">
         
         <div className="w-[70%] md:w-auto flex-shrink-0">
-          <a href="#" aria-label="Página Inicial - Prefeitura de Chã Grande" className="flex items-center no-underline">
+          <a href="/" aria-label="Página Inicial - Prefeitura de Chã Grande" className="flex items-center no-underline">
             <img 
               src="/assets/Logo%201.png" 
               alt="Logótipo da Prefeitura Municipal de Chã Grande" 
@@ -31,7 +31,7 @@ export default function Header() {
           <ul className="flex flex-col md:flex-row list-none gap-0 md:gap-[32px] m-0 p-0 w-full md:w-auto md:items-center">
             
             <li className="w-full md:w-auto border-b md:border-none border-[#E2E8F0]">
-              <a href="#" className="flex justify-between items-center text-[#334155] no-underline font-semibold text-[0.95rem] py-[15px] px-[20px] md:p-0 hover:text-[#005FA3] transition-colors">
+              <a href="/" className="flex justify-between items-center text-[#334155] no-underline font-semibold text-[0.95rem] py-[15px] px-[20px] md:p-0 hover:text-[#005FA3] transition-colors">
                 Início
               </a>
             </li>

@@ -1,206 +1,62 @@
-import HeroSearch from '@/components/widgets/HeroSearch';
-import HeroSearchV2 from '@/components/widgets/HeroSearchV2';
-import HeroSearchV3 from '@/components/widgets/HeroSearchV3';
-import AcessoRapidoWidget from '@/components/widgets/AcessoRapidoWidget';
-import FeaturedNewsWidget from '@/components/widgets/FeaturedNewsWidget';
-import FeaturedNewsWidgetV2 from '@/components/widgets/FeaturedNewsWidgetV2';
-import ObrasWidget from '@/components/widgets/ObrasWidget';
-import ObrasWidgetV2 from '@/components/widgets/ObrasWidgetV2';
-import OuvidoriaWidget from '@/components/widgets/OuvidoriaWidget';
-import OuvidoriaWidgetV2 from '@/components/widgets/OuvidoriaWidgetV2';
-import LicitacoesWidget from '@/components/widgets/LicitacoesWidget';
-import CentralCidadaoWidget from '@/components/widgets/CentralCidadaoWidget';
-import NewsWidget from '@/components/widgets/NewsWidget';
-import QuickLinksWidget from '@/components/widgets/QuickLinksWidget';
-import TimelineWidget from '@/components/widgets/TimelineWidget';
-import SealsWidget from '@/components/widgets/SealsWidget';
-import SpecialProgramsWidget from '@/components/widgets/SpecialProgramsWidget';
-import StatsWidget from '@/components/widgets/StatsWidget';
-import SeloPrataBanner from '@/components/widgets/SeloPrataBanner';
-import AboutCityWidget from '@/components/widgets/AboutCityWidget';
-import TvInstitucionalWidget from '@/components/widgets/TvInstitucionalWidget';
-import InstagramFeedWidget from '@/components/widgets/InstagramFeedWidget';
-import VideoCarouselWidget from '@/components/widgets/VideoCarouselWidget';
-import LocationWidget from '@/components/widgets/LocationWidget';
-import ScrollReveal from '@/components/ui/ScrollReveal';
-import NewsWidgetV2 from '@/components/widgets/NewsWidgetV2';
-import StatsWidgetV2 from '@/components/widgets/StatsWidgetV2';
-import QuickLinksWidgetV2 from '@/components/widgets/QuickLinksWidgetV2';
-import TimelineWidgetV2 from '@/components/widgets/TimelineWidgetV2';
-import TvInstitucionalWidgetV2 from '@/components/widgets/TvInstitucionalWidgetV2';
-import InstagramFeedWidgetV2 from '@/components/widgets/InstagramFeedWidgetV2';
-import VideoCarouselWidgetV2 from '@/components/widgets/VideoCarouselWidgetV2';
-import AboutCityWidgetV2 from '@/components/widgets/AboutCityWidgetV2';
-import SpecialProgramsWidgetV2 from '@/components/widgets/SpecialProgramsWidgetV2';
-import CentralCidadaoWidgetV2 from '@/components/widgets/CentralCidadaoWidgetV2';
-import LocationWidgetV2 from '@/components/widgets/LocationWidgetV2';
-import SealsWidgetV2 from '@/components/widgets/SealsWidgetV2';
-import AcessoRapidoWidgetV2 from '@/components/widgets/AcessoRapidoWidgetV2';
-import LicitacoesWidgetV2 from '@/components/widgets/LicitacoesWidgetV2';
+import Link from 'next/link';
 
-export default function PrefeituraMasterHome() {
+export default function HubPage() {
   return (
-    <>
-      <HeroSearch />
+    <div className="min-h-screen bg-[#F8FAFC] flex flex-col items-center justify-center p-6 relative overflow-hidden">
+      {/* Background Decorativo */}
+      <div className="absolute top-0 left-0 w-full h-[400px] bg-[#0A2540] rounded-b-[50px] sm:rounded-b-[100px]"></div>
       
-      <ScrollReveal>
-        <AcessoRapidoWidget />
-      </ScrollReveal>
-
-      <div className="max-w-350 mx-auto px-[5%] mb-15 flex flex-col gap-8">
-        <ScrollReveal>
-          <FeaturedNewsWidget />
-        </ScrollReveal>
-
-        <ScrollReveal>
-          <ObrasWidget />
-        </ScrollReveal>
-
-        <ScrollReveal>
-          <OuvidoriaWidget />
-        </ScrollReveal>
-
-        <ScrollReveal>
-          <div className="grid grid-cols-1 lg:grid-cols-[1.8fr_1fr] gap-8">
-            <div className="flex flex-col gap-6 h-full justify-between">
-              <NewsWidget />
-              <StatsWidget /> 
-              <SeloPrataBanner />
-            </div>
-            
-            <div className="flex flex-col gap-6 h-full justify-between">
-              <QuickLinksWidget />
-              <TimelineWidget />
-            </div>
-          </div>
-        </ScrollReveal>
-
-        <ScrollReveal>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <TvInstitucionalWidget />
-            <InstagramFeedWidget />
-          </div>
-        </ScrollReveal>
-      </div>
-     
-      <ScrollReveal>
-        <VideoCarouselWidget />
-      </ScrollReveal>
-      
-      <ScrollReveal>
-        <AboutCityWidget />
-      </ScrollReveal>
-
-      <ScrollReveal>
-        <SpecialProgramsWidget />
-      </ScrollReveal>
-
-      <ScrollReveal>
-        <CentralCidadaoWidget />
-      </ScrollReveal>
-
-      <ScrollReveal>
-        <LocationWidget />
-      </ScrollReveal>
-
-      <ScrollReveal>
-        <SealsWidget />
-      </ScrollReveal>
-
-      {/* =======================================================================
-          VISÃO 2030: REDESIGN POR PARTES (ETAPA 1)
-          ======================================================================= */}
-      <div className="mt-40 w-full relative border-t border-gray-300">
-        <HeroSearchV2 />
+      <div className="text-center mb-16 mt-10 relative z-10">
+        <h1 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">Portal da Prefeitura</h1>
+        <p className="text-blue-200 text-lg max-w-2xl mx-auto">Escolha qual versão de layout você deseja visualizar e testar.</p>
       </div>
 
-      {/* =======================================================================
-          VISÃO 2030: REDESIGN POR PARTES (ETAPA 2 - TRANSPARÊNCIA)
-          ======================================================================= */}
-      <div className="py-24 px-[5%] bg-gradient-to-br from-[#E8EDF3] via-[#EEF2F7] to-[#E3EAF2] relative">
-        <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-gradient-to-tr from-[#005FA3]/8 to-transparent rounded-full blur-[80px] pointer-events-none"></div>
-
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-            <div>
-              <span className="text-[#005FA3] font-bold tracking-widest text-[10px] uppercase mb-2 block">Dados Abertos</span>
-              <h2 className="text-3xl md:text-4xl font-black text-[#0A2540] tracking-tight">Transparência e Governança</h2>
-              <p className="text-gray-500 mt-2 max-w-lg">Acompanhe obras, licitações e indicadores de desempenho da gestão municipal em tempo real.</p>
-            </div>
-            <a href="#" className="text-sm font-bold text-[#005FA3] hover:text-[#0A2540] transition-colors border border-gray-200 bg-white px-5 py-2.5 rounded-full hover:bg-gray-50 shadow-sm whitespace-nowrap">
-              Portal da Transparência &rarr;
-            </a>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl relative z-10">
+        
+        {/* Card V1 */}
+        <Link href="/v1" className="group bg-white rounded-3xl p-8 shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_50px_rgba(0,95,163,0.15)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center border-t-4 border-transparent hover:border-[#005FA3]">
+          <div className="w-20 h-20 rounded-2xl bg-blue-50 text-[#005FA3] flex items-center justify-center mb-6 group-hover:bg-[#005FA3] group-hover:text-white transition-colors duration-300">
+            <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
           </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-            <div className="lg:col-span-4 h-full">
-              <StatsWidgetV2 />
-            </div>
-            <div className="lg:col-span-8 h-full">
-              <ObrasWidgetV2 />
-            </div>
-            
-            <div className="lg:col-span-4 h-full">
-              <TimelineWidgetV2 />
-            </div>
-            <div className="lg:col-span-8 h-full">
-              <LicitacoesWidgetV2 />
-            </div>
+          <h2 className="text-2xl font-bold text-[#0A2540] mb-3">V1</h2>
+          <p className="text-gray-500 text-sm">Design original, clássico e robusto, com barra de busca em estilo pílula e widgets arredondados.</p>
+          <div className="mt-8 text-[#005FA3] font-semibold flex items-center gap-2 group-hover:translate-x-2 transition-transform">
+            Acessar <span className="text-xl">&rarr;</span>
           </div>
-        </div>
+        </Link>
+
+        {/* Card V2 */}
+        <Link href="/v2" className="group bg-white rounded-3xl p-8 shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_50px_rgba(0,95,163,0.15)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center border-t-4 border-transparent hover:border-[#005FA3]">
+          <div className="w-20 h-20 rounded-2xl bg-blue-50 text-[#005FA3] flex items-center justify-center mb-6 group-hover:bg-[#005FA3] group-hover:text-white transition-colors duration-300 relative overflow-hidden">
+             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <svg className="w-10 h-10 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h2 className="text-2xl font-bold text-[#0A2540] mb-3">V2</h2>
+          <p className="text-gray-500 text-sm">Visão 2030: Layout inovador, barra de pesquisa minimalista escura e widgets redesenhados estilo glassmorphism.</p>
+          <div className="mt-8 text-[#005FA3] font-semibold flex items-center gap-2 group-hover:translate-x-2 transition-transform">
+            Acessar <span className="text-xl">&rarr;</span>
+          </div>
+        </Link>
+
+        {/* Card V3 */}
+        <Link href="/v3" className="group bg-white rounded-3xl p-8 shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_50px_rgba(0,95,163,0.15)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center border-t-4 border-transparent hover:border-[#005FA3]">
+          <div className="w-20 h-20 rounded-2xl bg-blue-50 text-[#005FA3] flex items-center justify-center mb-6 group-hover:bg-[#005FA3] group-hover:text-white transition-colors duration-300">
+            <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+            </svg>
+          </div>
+          <h2 className="text-2xl font-bold text-[#0A2540] mb-3">V3</h2>
+          <p className="text-gray-500 text-sm">Versão experimental com layouts alternativos, ideal para testes de usabilidade e novidades futuras.</p>
+          <div className="mt-8 text-[#005FA3] font-semibold flex items-center gap-2 group-hover:translate-x-2 transition-transform">
+            Acessar <span className="text-xl">&rarr;</span>
+          </div>
+        </Link>
+
       </div>
-
-      {/* =======================================================================
-          VISÃO 2030: REDESIGN POR PARTES (ETAPA 3 - COMUNICAÇÃO)
-          ======================================================================= */}
-      <div className="py-32 px-[5%] bg-gradient-to-br from-[#F0F7FF] via-white to-[#F8FAFC] relative">
-        <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-gradient-to-bl from-[#005FA3]/5 to-transparent rounded-full blur-[80px] pointer-events-none"></div>
-
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-            <div>
-              <span className="text-[#005FA3] font-bold tracking-widest text-[10px] uppercase mb-2 block">Informação ao Cidadão</span>
-              <h2 className="text-3xl md:text-4xl font-black text-[#0A2540] tracking-tight">Comunicação e Participação</h2>
-              <p className="text-gray-500 mt-2 max-w-lg">Fique por dentro das notícias, acompanhe a TV institucional e participe ativamente da gestão municipal.</p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            <div className="lg:col-span-8 flex flex-col gap-8">
-              <FeaturedNewsWidgetV2 />
-              <TvInstitucionalWidgetV2 />
-            </div>
-            
-            <div className="lg:col-span-4 flex flex-col gap-8">
-              <OuvidoriaWidgetV2 />
-              <InstagramFeedWidgetV2 />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* =======================================================================
-          VISÃO 2030: REDESIGN POR PARTES (ETAPA 4 - INSTITUCIONAL)
-          ======================================================================= */}
-      <div className="py-32 px-[5%] bg-[#EBEBEB] relative">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-16">
-            <span className="text-[#005FA3] font-bold tracking-widest text-[10px] uppercase mb-2 block">A Prefeitura</span>
-            <h2 className="text-3xl md:text-4xl font-black text-[#0A2540] tracking-tight">Institucional</h2>
-            <p className="text-gray-500 mt-2 max-w-lg">Conheça a cidade, onde nos encontrar e os reconhecimentos que nos orgulham.</p>
-          </div>
-
-          <div className="flex flex-col gap-8">
-            <AboutCityWidgetV2 />
-            <LocationWidgetV2 />
-            <SealsWidgetV2 />
-          </div>
-        </div>
-      </div>
-
-      <div className="w-full relative mt-40 border-t-4 border-[#005FA3]">
-        <HeroSearchV3 />
-      </div>
-    </>
+    </div>
   );
 }
