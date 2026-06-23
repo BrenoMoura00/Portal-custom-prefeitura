@@ -26,7 +26,7 @@ export default function OuvidoriaWidget() {
       <div className="absolute bottom-[-80px] left-[10%] w-[200px] h-[200px] bg-[#005FA3] opacity-50 rounded-full blur-[60px] pointer-events-none"></div>
 
       <div className="relative z-10 flex flex-col lg:flex-row gap-[40px] items-center justify-between">
-        
+
         <div className="flex-1 text-white max-w-[500px]">
           <div className="inline-flex items-center gap-[8px] bg-white/10 px-[16px] py-[6px] rounded-full text-[0.8rem] font-extrabold uppercase tracking-[1px] mb-[16px] backdrop-blur-sm border border-white/10">
             <i className="fas fa-headset"></i> Atendimento ao Cidadão
@@ -42,11 +42,11 @@ export default function OuvidoriaWidget() {
           </a>
         </div>
 
-        <div className="w-full lg:w-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-[16px]">
+        <div className="w-full flex-1 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-[16px]">
           {options.map((opt) => (
-            <a 
-              key={opt.id} 
-              href="#" 
+            <a
+              key={opt.id}
+              href="#"
               className="group bg-white/5 hover:bg-white/15 border border-white/10 hover:border-white/30 backdrop-blur-md p-[24px] rounded-[20px] transition-all duration-300 flex flex-col gap-[16px] items-start hover:-translate-y-[4px]"
             >
               <div className="w-[48px] h-[48px] rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-[#0A2540] text-white transition-colors duration-300">
