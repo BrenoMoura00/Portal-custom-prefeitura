@@ -11,7 +11,7 @@ export default function HubPage() {
         <p className="text-blue-200 text-lg max-w-2xl mx-auto">Escolha qual versão de layout você deseja visualizar e testar.</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-7xl relative z-10">
         
         {/* Card V1 */}
         <Link href="/v1" className="group bg-white rounded-3xl p-8 shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_50px_rgba(0,95,163,0.15)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center border-t-4 border-transparent hover:border-[#005FA3]">
@@ -53,6 +53,22 @@ export default function HubPage() {
           <p className="text-gray-500 text-sm">Versão experimental com layouts alternativos, ideal para testes de usabilidade e novidades futuras.</p>
           <div className="mt-8 text-[#005FA3] font-semibold flex items-center gap-2 group-hover:translate-x-2 transition-transform">
             Acessar <span className="text-xl">&rarr;</span>
+          </div>
+        </Link>
+
+        {/* Card V4 */}
+        <Link href="/v4" className="group bg-white rounded-3xl p-8 shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_50px_rgba(59,130,246,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center border-t-4 border-transparent hover:border-blue-500 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          
+          <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-100 to-indigo-100 text-blue-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-sm relative z-10">
+            <svg className="w-10 h-10 animate-[pulse_3s_ease-in-out_infinite]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <h2 className="text-2xl font-black text-slate-800 mb-3 relative z-10">V4 <span className="text-[10px] font-bold uppercase tracking-wider bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-2 py-1 rounded-full ml-2">Inteligente</span></h2>
+          <p className="text-slate-500 text-sm relative z-10 font-medium">Inovação real: Busca baseada em IA conversacional, interface limpa flutuante (estilo macOS) e tons pastéis suaves.</p>
+          <div className="mt-8 text-blue-600 font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform relative z-10">
+            Explorar o Futuro <span className="text-xl">&rarr;</span>
           </div>
         </Link>
 

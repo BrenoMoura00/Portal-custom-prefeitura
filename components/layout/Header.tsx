@@ -1,9 +1,15 @@
 'use client';
 
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  if (pathname === '/') {
+    return null;
+  }
 
   return (
     <header className="bg-white shadow-[0_4px_15px_rgba(0,0,0,0.06)] sticky top-0 z-[999] px-[5%] py-[10px]">

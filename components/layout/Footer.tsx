@@ -1,4 +1,14 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
+
 export default function Footer() {
+  const pathname = usePathname();
+
+  if (pathname === '/v3' || pathname === '/v4' || pathname === '/') {
+    return null;
+  }
+
   const infoPrefeitura = {
     cnpj: "11.049.806/0001-90",
     endereco: "Avenida São José, nº 101, Centro - CEP: 55.636-000",
