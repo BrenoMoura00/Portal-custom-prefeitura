@@ -17,6 +17,7 @@ import VideoCarouselWidget from '@/components/widgets/VideoCarouselWidget';
 import LocationWidget from '@/components/widgets/LocationWidget';
 import CentralCidadaoWidget from '@/components/widgets/CentralCidadaoWidget';
 import ScrollReveal from '@/components/ui/ScrollReveal';
+import Footer from '@/components/layout/Footer';
 
 export default function V1Page() {
   return (
@@ -86,6 +87,7 @@ export default function V1Page() {
       <ScrollReveal>
         <SealsWidget />
       </ScrollReveal>
+      <Footer />
     </>
   );
 }

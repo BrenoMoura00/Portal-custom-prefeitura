@@ -1,6 +1,5 @@
 import './globals.css';
 import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
 import AccessibilityBar from '../components/layout/AccessibilityBar';
 import WhatsAppButton from '../components/ui/WhatsAppButton';
 
@@ -25,7 +24,6 @@ export default function RootLayout({
           {children}
         </main>
         
-        <Footer />
         <WhatsAppButton />
       </body>
     </html>

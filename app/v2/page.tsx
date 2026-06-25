@@ -10,6 +10,7 @@ import ObrasWidgetV2 from '@/components/widgets/ObrasWidgetV2';
 import LicitacoesWidgetV2 from '@/components/widgets/LicitacoesWidgetV2';
 import FeaturedNewsWidgetV2 from '@/components/widgets/FeaturedNewsWidgetV2';
 import OuvidoriaWidgetV2 from '@/components/widgets/OuvidoriaWidgetV2';
+import Footer from '@/components/layout/Footer';
 
 export default function V2Page() {
   return (
@@ -104,6 +105,7 @@ export default function V2Page() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
