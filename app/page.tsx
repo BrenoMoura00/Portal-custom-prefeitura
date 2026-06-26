@@ -90,6 +90,22 @@ export default function HubPage() {
             </div>
           </Link>
 
+          {/* Card V6 */}
+          <Link href="/v6" className="w-full md:w-[260px] lg:w-[280px] group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center border-t-4 border-transparent hover:border-rose-500 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-rose-50 via-white to-pink-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-rose-100 to-pink-100 text-rose-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-sm relative z-10">
+              <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h2 className="text-2xl font-black text-slate-800 mb-1 relative z-10">V6</h2>
+            <p className="text-slate-500 text-sm relative z-10 font-medium">Portal da Prefeitura Versão 6</p>
+            <div className="mt-8 text-rose-600 font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform relative z-10">
+              Acessar <span className="text-xl">&rarr;</span>
+            </div>
+          </Link>
+
         </div>
       </div>
       <Footer />
