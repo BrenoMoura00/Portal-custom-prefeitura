@@ -106,6 +106,38 @@ export default function HubPage() {
             </div>
           </Link>
 
+          {/* Card V7 */}
+          <Link href="/v7" className="w-full md:w-[260px] lg:w-[280px] group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center border-t-4 border-transparent hover:border-violet-500 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-violet-50 via-white to-fuchsia-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-violet-100 to-fuchsia-100 text-violet-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-sm relative z-10">
+              <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+              </svg>
+            </div>
+            <h2 className="text-2xl font-black text-slate-800 mb-1 relative z-10">V7</h2>
+            <p className="text-slate-500 text-sm relative z-10 font-medium">Portal da Prefeitura Versão 7</p>
+            <div className="mt-8 text-violet-600 font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform relative z-10">
+              Acessar <span className="text-xl">&rarr;</span>
+            </div>
+          </Link>
+
+          {/* Card V8 */}
+          <Link href="/v8" className="w-full md:w-[260px] lg:w-[280px] group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center border-t-4 border-transparent hover:border-amber-500 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-white to-orange-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 text-amber-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-sm relative z-10">
+              <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+              </svg>
+            </div>
+            <h2 className="text-2xl font-black text-slate-800 mb-1 relative z-10">V8</h2>
+            <p className="text-slate-500 text-sm relative z-10 font-medium">Portal da Prefeitura Versão 8</p>
+            <div className="mt-8 text-amber-600 font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform relative z-10">
+              Acessar <span className="text-xl">&rarr;</span>
+            </div>
+          </Link>
+
         </div>
       </div>
       <Footer />
