@@ -1,8 +1,10 @@
+import HeaderV2 from '@/components/layout/HeaderV2';
 import HeroSearchV2 from '@/components/widgets/HeroSearchV2';
 import StatsWidgetV2 from '@/components/widgets/StatsWidgetV2';
 import TimelineWidgetV2 from '@/components/widgets/TimelineWidgetV2';
 import TvInstitucionalWidgetV2 from '@/components/widgets/TvInstitucionalWidgetV2';
 import InstagramFeedWidgetV2 from '@/components/widgets/InstagramFeedWidgetV2';
+import AutoridadesWidgetV2 from '@/components/widgets/AutoridadesWidgetV2';
 import AboutCityWidgetV2 from '@/components/widgets/AboutCityWidgetV2';
 import LocationWidgetV2 from '@/components/widgets/LocationWidgetV2';
 import SealsWidgetV2 from '@/components/widgets/SealsWidgetV2';
@@ -15,6 +17,7 @@ import Footer from '@/components/layout/Footer';
 export default function V2Page() {
   return (
     <>
+      <HeaderV2 />
       {/* =======================================================================
           VISÃO 2030: REDESIGN POR PARTES (ETAPA 1)
           ======================================================================= */}
@@ -99,6 +102,7 @@ export default function V2Page() {
           </div>
 
           <div className="flex flex-col gap-8">
+            <AutoridadesWidgetV2 />
             <AboutCityWidgetV2 />
             <LocationWidgetV2 />
             <SealsWidgetV2 />

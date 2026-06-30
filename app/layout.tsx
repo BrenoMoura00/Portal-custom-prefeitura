@@ -1,5 +1,4 @@
 import './globals.css';
-import Header from '../components/layout/Header';
 import AccessibilityBar from '../components/layout/AccessibilityBar';
 import WhatsAppButton from '../components/ui/WhatsAppButton';
 
@@ -18,7 +17,6 @@ export default function RootLayout({
       </head>
       <body>
         <AccessibilityBar />
-        <Header />
         
         <main id="main-content">
           {children}

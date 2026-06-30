@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 export default function HubPage() {
   return (
     <>
+      <Header />
       <div className="min-h-screen bg-[#F8FAFC] flex flex-col items-center justify-center p-6 relative overflow-hidden">
         {/* Background Decorativo */}
         <div className="absolute top-0 left-0 w-full h-[400px] bg-[#0A2540] rounded-b-[50px] sm:rounded-b-[100px]"></div>
@@ -134,6 +136,38 @@ export default function HubPage() {
             <h2 className="text-2xl font-black text-slate-800 mb-1 relative z-10">V8</h2>
             <p className="text-slate-500 text-sm relative z-10 font-medium">Portal da Prefeitura Versão 8</p>
             <div className="mt-8 text-amber-600 font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform relative z-10">
+              Acessar <span className="text-xl">&rarr;</span>
+            </div>
+          </Link>
+
+          {/* Card V9 */}
+          <Link href="/v9" className="w-full md:w-[260px] lg:w-[280px] group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center border-t-4 border-transparent hover:border-cyan-500 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 via-white to-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-cyan-100 to-blue-100 text-cyan-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-sm relative z-10">
+              <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+              </svg>
+            </div>
+            <h2 className="text-2xl font-black text-slate-800 mb-1 relative z-10">V9</h2>
+            <p className="text-slate-500 text-sm relative z-10 font-medium">Portal da Prefeitura Versão 9</p>
+            <div className="mt-8 text-cyan-600 font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform relative z-10">
+              Acessar <span className="text-xl">&rarr;</span>
+            </div>
+          </Link>
+
+          {/* Card V10 */}
+          <Link href="/v10" className="w-full md:w-[260px] lg:w-[280px] group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center border-t-4 border-transparent hover:border-indigo-500 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-indigo-100 to-purple-100 text-indigo-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-sm relative z-10">
+              <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
+              </svg>
+            </div>
+            <h2 className="text-2xl font-black text-slate-800 mb-1 relative z-10">V10</h2>
+            <p className="text-slate-500 text-sm relative z-10 font-medium">Portal da Prefeitura Versão 10</p>
+            <div className="mt-8 text-indigo-600 font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform relative z-10">
               Acessar <span className="text-xl">&rarr;</span>
             </div>
           </Link>

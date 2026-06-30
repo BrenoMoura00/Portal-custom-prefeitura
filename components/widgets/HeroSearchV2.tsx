@@ -4,8 +4,8 @@ import AcessoRapidoWidgetV2 from './AcessoRapidoWidgetV2';
 export default function HeroSearchV2() {
   return (
     <div className="w-full flex flex-col lg:flex-row bg-[#0A2540]">
-      {/* Lado Esquerdo - 40% (Busca e Opções) */}
-      <div className="w-full lg:w-[40%] px-[5%] lg:pl-[10%] lg:pr-12 py-16 lg:py-24 flex flex-col justify-center bg-[#0A2540] z-10 relative">
+      {/* Lado Esquerdo - 50% (Busca e Opções) */}
+      <div className="w-full lg:w-[50%] px-[5%] lg:pl-[10%] lg:pr-16 py-16 lg:py-24 flex flex-col justify-center bg-[#0A2540] z-10 relative">
         
         <div className="mb-10">
           <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">Portal de Serviços</h2>
@@ -35,8 +35,8 @@ export default function HeroSearchV2() {
 
       </div>
 
-      {/* Lado Direito - 60% (Imagem da Cidade) */}
-      <div className="w-full lg:w-[60%] min-h-[400px] lg:min-h-auto relative">
+      {/* Lado Direito - 50% (Imagem da Cidade) */}
+      <div className="w-full lg:w-[50%] min-h-[400px] lg:min-h-auto relative">
         <img 
           src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
           alt="Vista da Cidade" 

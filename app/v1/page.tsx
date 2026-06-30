@@ -1,3 +1,4 @@
+import Header from '@/components/layout/Header';
 import HeroSearch from '@/components/widgets/HeroSearch';
 import AcessoRapidoWidget from '@/components/widgets/AcessoRapidoWidget';
 import FeaturedNewsWidget from '@/components/widgets/FeaturedNewsWidget';
@@ -11,6 +12,7 @@ import SpecialProgramsWidget from '@/components/widgets/SpecialProgramsWidget';
 import StatsWidget from '@/components/widgets/StatsWidget';
 import SeloPrataBanner from '@/components/widgets/SeloPrataBanner';
 import AboutCityWidget from '@/components/widgets/AboutCityWidget';
+import AutoridadesWidget from '@/components/widgets/AutoridadesWidget';
 import TvInstitucionalWidget from '@/components/widgets/TvInstitucionalWidget';
 import InstagramFeedWidget from '@/components/widgets/InstagramFeedWidget';
 import VideoCarouselWidget from '@/components/widgets/VideoCarouselWidget';
@@ -22,6 +24,7 @@ import Footer from '@/components/layout/Footer';
 export default function V1Page() {
   return (
     <>
+      <Header />
       <HeroSearch />
       
       <ScrollReveal>
@@ -70,6 +73,10 @@ export default function V1Page() {
       
       <ScrollReveal>
         <AboutCityWidget />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <AutoridadesWidget />
       </ScrollReveal>
 
       <ScrollReveal>

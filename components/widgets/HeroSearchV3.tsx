@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function HeroSearchV3() {
   return (
-    <div className="relative w-full min-h-[600px] flex items-center justify-center overflow-hidden">
+    <div className="relative w-full min-h-[700px] flex items-center justify-center overflow-hidden">
       
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0 w-full h-full">
@@ -16,7 +16,7 @@ export default function HeroSearchV3() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-[5%] text-center pt-20 pb-24">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-[5%] text-center pt-40 pb-24">
         
         <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight drop-shadow-lg">
           O que você precisa <br className="hidden md:block" /> resolver hoje?

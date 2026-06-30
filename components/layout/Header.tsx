@@ -1,11 +1,22 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
   const pathname = usePathname();
+
+  
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowSearch(window.scrollY > 350);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   if (pathname === '/') {
     return null;
@@ -34,7 +45,8 @@ export default function Header() {
         </button>
 
         <nav className={`${isMobileMenuOpen ? 'block absolute top-full left-0 w-full bg-white shadow-md border-t-[2px] border-[#E2E8F0] p-0' : 'hidden'} md:flex md:static md:w-auto md:bg-transparent md:shadow-none md:border-none md:p-0 flex-grow md:justify-end`}>
-          <ul className="flex flex-col md:flex-row list-none gap-0 md:gap-[32px] m-0 p-0 w-full md:w-auto md:items-center">
+          <div className="flex flex-col md:flex-row items-center w-full md:w-auto">
+            <ul className="flex flex-col md:flex-row list-none gap-0 md:gap-[32px] m-0 p-0 w-full md:w-auto md:items-center">
             
             <li className="w-full md:w-auto border-b md:border-none border-[#E2E8F0]">
               <a href="/" className="flex justify-between items-center text-[#334155] no-underline font-semibold text-[0.95rem] py-[15px] px-[20px] md:p-0 hover:text-[#005FA3] transition-colors">
@@ -82,6 +94,19 @@ export default function Header() {
             </li>
             
           </ul>
+            <div className={`hidden md:flex transition-all duration-500 ease-in-out overflow-hidden items-center ${showSearch ? 'w-64 opacity-100 ml-6' : 'w-0 opacity-0 ml-0'}`}>
+              <div className="relative w-full">
+                <input 
+                  type="text" 
+                  placeholder="Buscar serviços..." 
+                  className="w-full bg-[#F1F5F9] border-none rounded-full py-2 pl-4 pr-10 text-[0.9rem] focus:ring-2 focus:ring-[#005FA3] focus:outline-none"
+                />
+                <button className="absolute right-3 top-1/2 -translate-y-1/2 text-[#64748B] hover:text-[#005FA3] transition-colors bg-transparent border-none cursor-pointer p-0">
+                  <i className="fas fa-search text-[0.9rem]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </nav>
         
       </div>
